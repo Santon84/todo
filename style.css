@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -7,18 +8,19 @@
 }
 
 .todo-conteiner {
-background-color: #f6f6f6;
-border-radius: 1rem;  
-padding: 20px; 
-position: relative;
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    padding: 20px;
+    position: relative;
 }
+
 .todo-items-conteiner {
 
-  height: 80%;
-  width: 100%;
-  margin-top: 20px; 
-  padding: 5px 10px;
-  border-radius: 10px;
+    height: 80%;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .todos-conteiner {
@@ -30,9 +32,10 @@ position: relative;
     gap: 20px;
 }
 
-.todo-conteiner-header{
-     font-size: 1rem;  
+.todo-conteiner-header {
+    font-size: 1rem;
 }
+
 .todo {
     padding: 10px;
     margin-top: 20px;
@@ -42,81 +45,86 @@ position: relative;
     cursor: pointer;
 }
 
-.todo > h3 {
+.todo>h3 {
 
     font-size: 1rem;
     font-weight: 300;
 }
+
 .add-todo {
 
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: burlywood;  
+    background-color: burlywood;
     position: absolute;
     right: 20px;
     cursor: pointer;
     box-shadow: 5px #000;
 }
+
 .add-todo::before {
     content: '';
     display: block;
     position: absolute;
-    top:7px;
-    left:14px;
+    top: 7px;
+    left: 14px;
     width: 2px;
-    height: 15px;    
+    height: 15px;
     background-color: rgb(255, 255, 255);
 
-  }
+}
+
 .add-todo::after {
     content: '';
     display: block;
     position: absolute;
-    top:14px;
-    left:7px;
+    top: 14px;
+    left: 7px;
     width: 15px;
-    height: 2px;    
+    height: 2px;
     background-color: rgb(255, 255, 255);
 
-  }
+}
 
 
 .dragging {
-    border: 2px solid black; 
+    border: 2px solid black;
     opacity: .5;
 }
-    
-   
+
+
 .focused {
 
-    border: 1px dashed black; 
+    border: 1px dashed black;
 }
 
 .todo {
-position:relative;
+    position: relative;
 
 }
-.close-button{
 
-content: '';
-width: 20px;
-height: 20px;
-background-color: burlywood;
-position: absolute;
-top: 5px;
-right: 5px;
-display: none;
-border-radius: 50%;
+.close-button {
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: burlywood;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    border-radius: 50%;
 
 
 }
+
 .todo:hover .close-button {
     display: block;
-    
+
 }
 
-.close-button::after{
+.close-button::after {
 
     content: '';
     width: 10px;
@@ -127,23 +135,23 @@ border-radius: 50%;
     right: 5px;
     display: block;
 
-    
-    
+
+
 }
 
 
 .button {
 
-background-color: burlywood;    
-padding: 10px 20px;
-border: 0;
-color: white;
-cursor: pointer;
+    background-color: burlywood;
+    padding: 10px 20px;
+    border: 0;
+    color: white;
+    cursor: pointer;
 }
 
 .button:hover {
 
-    background-color: rgb(168, 140, 103);    
+    background-color: rgb(168, 140, 103);
 }
 
 .buttons {
@@ -158,5 +166,5 @@ cursor: pointer;
     width: 900px;
     margin: 10px;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }

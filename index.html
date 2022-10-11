@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="onLoadCheck()">
     <div class="conteiner">
         <div class="top-conteiner">
@@ -16,16 +18,16 @@
                 <button class="button" onclick="saveData()">Save Local</button>
                 <button class="button" onclick="loadData()">Load Local</button>
                 <button class="button" onclick="clearAllData()">Clear All Data</button>
-                
-                
+
+
             </div>
-            
-                <label><input id='autoload' type="checkbox">Загружать автоматически</label>
-        </div>    
+
+            <label><input id='autoload' type="checkbox">Загружать автоматически</label>
+        </div>
         <div class="todos-conteiner">
             <div class="todo-conteiner todo-conteiner_main">
                 <div class="add-todo" id="add-todo-main"></div>
-               <h2 class="todo-conteiner-header">To Do</h2> 
+                <h2 class="todo-conteiner-header">To Do</h2>
                 <div class="todo-items-conteiner" id="todo-main">
                     <div class="todo" draggable="true">
                         <div class="close-button"></div>
@@ -34,22 +36,22 @@
                 </div>
             </div>
             <div class="todo-conteiner">
-                
-                <h2 class="todo-conteiner-header">In Progress</h2> 
-                <div class="todo-items-conteiner" >
-                    
+
+                <h2 class="todo-conteiner-header">In Progress</h2>
+                <div class="todo-items-conteiner">
+
                 </div>
             </div>
             <div class="todo-conteiner">
-                
-                <h2 class="todo-conteiner-header">Closed</h2> 
+
+                <h2 class="todo-conteiner-header">Closed</h2>
                 <div class="todo-items-conteiner">
-                    
+
                 </div>
             </div>
 
         </div>
-      
+
     </div>
     <template id="todo-item-template">
         <div class="todo" draggable="true">
@@ -58,4 +60,5 @@
         </div>
     </template>
 </body>
+
 </html>
